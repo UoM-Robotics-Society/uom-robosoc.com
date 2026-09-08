@@ -1,0 +1,10 @@
+---
+const { summary } = Astro.props;
+---
+
+<details class="group gap-3 border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
+  <summary class="cursor-pointer p-4 font-semibold text-black dark:text-white">{summary}</summary>
+  <div class="p-4 pt-0 prose dark:prose-invert">
+    <slot />
+  </div>
+</details>

@@ -1,0 +1,120 @@
+year: 2025-2026
+isCurrent: false
+img: ../../assets/img/committee/2025-2026.png
+members:
+   -
+    name: Alessandro
+    fullName: Alessandro Sica
+    role: Chair
+    img: ../../assets/img/committee/alessandro.jpg
+    linkedin: https://www.linkedin.com/in/-alessandro-sica
+   -
+    name: Alayna
+    fullName: Alayna Kondamudi
+    role: General Secretary
+    img: ../../assets/img/committee/alayna.jpg
+    linkedin: https://www.linkedin.com/in/alayna-kondamudi-438841301
+   -
+    name: Nadeem
+    fullName: Nadeem Ahmad
+    role: Treasurer
+    img: ../../assets/img/committee/nadeem.jpg
+    linkedin: https://www.linkedin.com/in/nadeem-ahmad-934864332
+   -
+    name: Seun
+    fullName: Seun Fashesin Souza
+    role: Inclusions/Events
+    img: ../../assets/img/committee/seun.jpg
+    linkedin: https://www.linkedin.com/in/seun-fashesin-souza-6285a8236
+   -
+    name: Sara
+    fullName: Sara Alaloul
+    role: Technician
+    img: ../../assets/img/committee/sara.jpg
+    linkedin: https://www.linkedin.com/in/sara-alaloul
+   -
+    name: Justin
+    fullName: Jongjun Justin Lee
+    role: Project Lead
+    img: ../../assets/img/committee/justin.jpg
+    linkedin: https://www.linkedin.com/in/jonghun-justin-lee
+   -
+    name: Arjan
+    fullName: Arjan Khele
+    role: Project Lead
+    img: ../../assets/img/committee/arjan.jpg
+    linkedin: https://www.linkedin.com/in/arjan-khele-9712081b9
+   -
+    name: Joshua A
+    fullName: Joshua Alliet
+    role: Project Lead
+    img: ../../assets/img/committee/joshua_a.jpg
+    linkedin: https://www.linkedin.com/in/jalliet
+   -
+    name: Levon
+    fullName: Levon Yavrumyan
+    role: Project Lead
+    img: ../../assets/img/committee/levon.jpg
+    linkedin: https://www.linkedin.com/in/levon-yavrumyan
+   -
+    name: Dinakar
+    fullName: Dinakar Iyer
+    role: Project Lead
+    img: ../../assets/img/committee/dinakar.jpg
+    linkedin: https://www.linkedin.com/in/dinakar-i-39a61a293
+   -
+    name: Tara
+    fullName: Tara Mulhall
+    role: Project Lead
+    img: ../../assets/img/committee/tara.jpg
+    linkedin: https://www.linkedin.com/in/tara-mulhall-67002a19a
+   -
+    name: Xandra
+    fullName: Xandra Wong
+    role: Project Support
+    img: ../../assets/img/committee/xandra.jpg
+    linkedin: https://www.linkedin.com/in/xin-rou-wong-693810372
+   -
+    name: Camila
+    fullName: Camila Salazar
+    role: Project Support
+    img: ../../assets/img/committee/camila.jpg
+    linkedin: https://www.linkedin.com/in/camila-salazar-b86227350
+   -
+    name: Josh F
+    fullName: Josh Fleet
+    role: Project Support
+    linkedin: https://www.linkedin.com/in/josh-fleet-b24575315
+   -
+    name: Rabia
+    fullName: Rabia Chowdhury
+    role: Media Manager
+   -
+    name: Zoe
+    fullName: Zoe Tang
+    role: Media Manager
+    img: ../../assets/img/committee/zoe.jpg
+    linkedin: https://www.linkedin.com/in/zoe-t-b9106a316/
+   -
+    name: Billy
+    fullName: Billy Caulfield
+    role: Events Team
+    img: ../../assets/img/committee/billy.jpg
+    linkedin: https://www.linkedin.com/in/billy-caulfield/
+   -
+    name: Archie
+    fullName: Archie James
+    role: Hackathon Team
+    img: ../../assets/img/committee/archie.jpg
+   -
+    name: Ted
+    fullName: Edward Donnan
+    role: Hackathon Team
+    img: ../../assets/img/committee/ted.jpg
+    linkedin: https://www.linkedin.com/in/teddy-donnan-920b7432a/
+   -
+    name: Thierry
+    fullName: Thierry Popat
+    role: Hackathon Team
+    img: ../../assets/img/committee/thierry.jpg
+    linkedin: https://www.linkedin.com/in/thierry-popat/

@@ -1,0 +1,227 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import ArrowCard from "@components/ArrowCard"
+import StackCard from "@components/StackCard.astro"
+import { SITE, SOCIALS } from "@consts"
+import TwinklingStars from "@components/TwinklingStars.astro"
+import MeteorShower from "@components/MeteorShower.astro"
+
+import FAQ from '../components/FAQ.astro'
+
+import { Image } from "astro:assets"
+import brandTitle from '../assets/svgs/brand-title.svg'
+import heroImage from '../assets/img/hero.jpg'
+
+const svgs = import.meta.glob('/src/assets/svgs/*.svg', { 
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+const iconMap = Object.fromEntries(Object.entries(svgs).map(([filepath, mod]) => {
+  const name = filepath.split('/').pop()?.replace('.svg', '') ?? '';
+  return [name, mod];
+}));
+
+const posts = (await getCollection("blog"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,3)
+
+const projects = (await getCollection("projects"))
+  .filter(project => project.data.featured)
+  .filter(project => !project.data.draft)
+  .sort((a, b) => a.data.order - b.data.order)
+
+const stack = [
+  { 
+    text: "Astro", 
+    icon: "astro", 
+    href: "https://astro.build" 
+  },
+  { 
+    text: "Javascript", 
+    icon: "javascript", 
+    href: "https://www.javascript.com" 
+  },
+  { 
+    text: "Typescript", 
+    icon: "typescript", 
+    href: "https://www.typescriptlang.org" 
+  },
+  { 
+    text: "Tailwind", 
+    icon: "tailwind", 
+    href: "https://tailwindcss.com" 
+  },
+]
+---
+
+<PageLayout title="Home" description={SITE.DESCRIPTION}>
+
+  <!-- HERO -->
+  <section class="relative h-screen w-full">
+    <div class="animate absolute h-full w-full flex items-center justify-center">
+
+      <Image
+          src={heroImage}
+          alt="View of the Makerspace"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          quality={35}
+          class="absolute w-full h-full object-cover object-center"
+          />
+      <div class="absolute inset-0 bg-black/50 backdrop-brightness-75"></div>
+
+      <div class='relative w-full h-full flex items-center justify-center'>
+        <div class='p-5 text-center text-white'>
+          <p class='animated text-lg md:text-xl lg:text-2xl font-semibold'>
+            Hi! We are
+          </p>
+          <div class="py-3 animated flex flex-col items-center">
+            <Image src={brandTitle} alt="Robosoc" class="h-10 w-auto"/>
+          </div>
+          <p class='pt-1 animated text-sm md:text-base lg:text-lg'>
+            University of Manchester Robotics Society
+          </p>
+          <p class='animated text-sm md:text-base lg:text-lg pt-8'>
+          Weekly projects every Wednesday @ 2pm during Term Time</p>
+          <p>
+          Engineering Building A
+          </p>
+
+          <div class="pt-8 flex items-center justify-center text-sm gap-1">
+
+            <a href="" class="h-8 rounded-full px-3 text-current  flex items-center justify-center  transition-colors duration-300 ease-in-out  bg-black dark:bg-white text-white dark:text-black  hover:bg-black/5 dark:hover:bg-white/80">
+              See our projects
+            </a>
+
+            <a href="" class="h-8 rounded-full px-3 text-current  flex items-center justify-center  transition-colors duration-300 ease-in-out  border  hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white">
+              Join us
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative">
+    <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
+
+      <!-- Instagram section -->
+
+      <section class="animate">
+        <div class="flex flex-col gap-2 mt-8 p-4 border rounded-lg border-red/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
+          <div class="sm:justify-start items-center">
+            { /* <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span> */}
+
+            <span class="font-semibold text-black dark:text-white pb-2">
+              Follow for updates
+            </span>
+          </div>
+          <p>
+          We post room announcements and event details.</p>
+          {SOCIALS.filter(item => ["Instagram"].includes(item.NAME)).map(item => (
+            <a href="" target="_blank" class="flex gap-2 w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="inline-flex w-4 h-auto [&>svg]:w-full [&>svg]:h-full" set:html={iconMap[item.ICON]} />
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                Visit {item.TEXT} on {item.NAME}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Blog Preview Section -->
+        <!-- <section class="animate"> -->
+        <!--   <div class="space-y-4"> -->
+        <!--     <div class="flex justify-between"> -->
+        <!--       <p class="font-semibold text-black dark:text-white"> -->
+        <!--         Recent posts -->
+        <!--       </p> -->
+        <!--       <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend"> -->
+        <!--         <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend"> -->
+        <!--           All posts -->
+        <!--         </span> -->
+        <!--       </a> -->
+        <!--     </div> -->
+        <!--     <ul class="space-y-4"> -->
+        <!--       {posts.map((post) => ( -->
+        <!--         <li> -->
+        <!--           <ArrowCard entry={post} /> -->
+        <!--         </li> -->
+        <!--       ))} -->
+        <!--     </ul> -->
+        <!--   </div> -->
+        <!-- </section> -->
+
+      <!-- Tech Stack Section -->
+        <!-- <section class="animate"> -->
+        <!--   <div class="space-y-4"> -->
+        <!--     <p class="font-semibold text-black dark:text-white"> -->
+        <!--       Website build with -->
+        <!--     </p> -->
+        <!--     <div class="flex flex-wrap items-center gap-2 mt-5"> -->
+        <!--       {stack.map(item => ( -->
+        <!--         <StackCard  -->
+        <!--           text={item.text} -->
+        <!--           icon={item.icon} -->
+        <!--           href={item.href} -->
+        <!--         /> -->
+        <!--       ))} -->
+        <!--     </div> -->
+        <!--     <div> -->
+        <!--       Performing reactivity and statefulness, special guest -->
+        <!--       <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend"> -->
+        <!--         <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend"> -->
+        <!--           SolidJS -->
+        <!--         </span> -->
+        <!--       </a> -->
+        <!--     </div> -->
+        <!--   </div> -->
+        <!-- </section> -->
+
+      <!-- Project Preview Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white">
+              Recent projects
+            </p>
+            <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                All projects
+              </span>
+            </a>
+          </div>
+          <ul class="space-y-4">
+            {projects.map((project) => (
+              <li>
+                <ArrowCard entry={project} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Hackathon section -->
+
+      <section class="animate">
+        <div>
+          <p class="font-semibold text-black dark:text-white pb-2">Expect more from us!</p>
+          <p>In addition to these projects, expect our yearly self-run Hack-A-Bot, workshops, talks, and fun socials.</p>
+        </div>
+      </section>
+
+      <section class="animate">
+        <FAQ />
+      </section>
+
+    </div>
+  </div>
+</PageLayout>

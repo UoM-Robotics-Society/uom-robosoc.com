@@ -1,0 +1,24 @@
+---
+import { getEntry } from 'astro:content';
+import { marked } from 'marked';
+import AccordionCard from '../components/AccordionCard.astro';
+
+const faqEntry = await getEntry('faq', 'faq');
+const faqs = faqEntry?.data.faqs ?? [];
+
+
+const parsedFaqs = await Promise.all(
+  faqs.map(async (item) => ({
+    question: item.question,
+    answerHtml: await marked.parse(item.answer),
+  }))
+);
+---
+
+<div class="container flex flex-col gap-3">
+  {parsedFaqs.map(({ question, answerHtml }) => (
+  <AccordionCard summary={question}>
+    <Fragment set:html={answerHtml} />
+  </AccordionCard>
+  ))}
+</div>

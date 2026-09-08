@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { COMMITTEE } from "@consts"
+import { Image } from "astro:assets";
+
+const collection = (await getCollection("committee")).sort((a,b) =>
+  b.data.year.localeCompare(a.data.year, undefined, {numeric: true})
+)
+import placeholderImg from '@/assets/img/placeholder.png'
+---
+
+<PageLayout title={COMMITTEE.TITLE}>
+  <TopLayout>
+    <div class="animate">
+      <h1 class="text-3xl font-semibold text-black dark:text-white mt-2">
+        {COMMITTEE.TITLE}
+      </h1>
+      <div class="mt-1">
+        {COMMITTEE.DESCRIPTION}
+      </div>
+    </div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="flex flex-col gap-16">
+      {collection.map((yearGroup) => (
+      <div class="animate flex flex-col gap-4">
+        {!yearGroup.data.isCurrent && <p class="font-semibold text-black dark:text-white">{yearGroup.data.year}</p> }
+        <div class="flex w-full justify-center">
+          {yearGroup.data.img && (
+          <Image class="rounded-lg w-2/3 h-auto" src={yearGroup.data.img} alt={yearGroup.data.year} />
+          )}
+        </div>
+        <div class="grid grid-col sm:grid-cols-2 gap-4">
+          {yearGroup.data.members.map((m) => (
+          <div class="flex flex-row items-center border rounded-lg border-red/15 dark:border-white/20 transition-colors duration-300 ease-in-out overflow-hidden">
+            <div class="h-24 w-24">
+              {m.img && <Image class="w-full h-full object-cover" src={m.img} alt={m.name} /> || <Image class="w-full h-full p-4" src={placeholderImg} alt={m.name} />}
+            </div>
+            <div class="flex flex-col justify-center p-4">
+              <p class="font-semibold">{m.name}</p>
+              <p>{m.role}</p>
+            </div>
+          </div>
+          ))}
+        </div>
+      </div>
+      ))}
+    </div>
+  </BottomLayout>
+</PageLayout>
