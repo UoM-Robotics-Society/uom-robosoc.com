@@ -1,4 +1,6 @@
-## [uom-robosoc.com](uom-robosoc.com)
+<img alt="hero" src="./assets/hero.png" />
+
+## uom-robosoc.com
 
 ## Acknowledgement
 
