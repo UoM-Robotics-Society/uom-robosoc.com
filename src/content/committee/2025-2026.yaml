@@ -12,7 +12,6 @@ members:
     name: David
     fullName: Alayna Kondamudi
     role: General Secretary
-    img: ../../assets/img/committee/alessandro.jpg
     linkedin: https://www.linkedin.com/in/alayna-kondamudi-438841301
    -
     name: Fatima
@@ -48,7 +47,6 @@ members:
     name: Taglub
     fullName: Joshua Alliet
     role: Project Lead
-    img: ../../assets/img/committee/alessandro.jpg
     linkedin: https://www.linkedin.com/in/jalliet
    -
     name: Kshitij
@@ -60,7 +58,6 @@ members:
     name: Kevin
     fullName: Dinakar Iyer
     role: Project Lead
-    img: ../../assets/img/committee/alessandro.jpg
     linkedin: https://www.linkedin.com/in/dinakar-i-39a61a293
    -
     name: Seun
@@ -96,7 +93,6 @@ members:
     name: Zain
     fullName: Zoe Tang
     role: Media Manager
-    img: ../../assets/img/committee/alessandro.jpg
     linkedin: https://www.linkedin.com/in/zoe-t-b9106a316/
    -
     name: Yassin
