@@ -66,8 +66,8 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Email",
     ICON: "email", 
-    TEXT: "uom.robosoc@gmail.com",
-    HREF: "mailto:uom.robosoc@gmail.com",
+    TEXT: "uomrobosoc2@gmail.com",
+    HREF: "mailto:uomrobosoc2@gmail.com",
   },
   { 
     NAME: "Linktree",
@@ -79,7 +79,7 @@ export const SOCIALS: Socials = [
     NAME: "LinkedIn",
     ICON: "linkedin",
     TEXT: "Robosoc (University of Manchester Robotics Society)",
-    HREF: "https://www.linkedin.com/company/90770697/admin/dashboard/",
+    HREF: "https://www.linkedin.com/company/90770697/",
   },
   { 
     NAME: "Instagram",
