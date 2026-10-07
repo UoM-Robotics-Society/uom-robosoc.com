@@ -9,7 +9,7 @@ tags:
 - Advanced
 ---
 <div align="center">
-  <img src="../../../assets/img/arm-main.jpg" alt="The Robotic Arm" width="80%" />
+  <img src="/assets/img/arm-main.jpg" alt="The Robotic Arm" width="80%" />
 </div>
 
 Design, fabricate, and control a multi-axis robotic manipulator.
@@ -30,7 +30,7 @@ Control Systems & Automation: Program inverse kinematic solvers, motion profiles
 **Experience Level:** Intermediate to Advanced. Best suited for students interested in mechanical kinematics, motor control algorithms, and industrial automation.
 
 <div align="center">
-  <img src="../../../assets/img/committee/Kshitij.jpg" alt="Kshitij - Arm Project Lead" width="200" style="border-radius: 50%;" />
+  <img src="/assets/img/committee/Kshitij.jpg" alt="Kshitij - Arm Project Lead" width="200" style={{ borderRadius: '50%' }} />
   <br />
   <strong>Kshitij</strong>
   <p>Arm Project Lead</p>
