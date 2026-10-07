@@ -7,10 +7,6 @@ coverImage: "../../../assets/img/artemis-iii-main.jpeg"
 tags:
 - Advanced
 ---
-<div align="center">
-  <img src="../../../assets/img/artemis-iii-main.jpeg" alt="Artemis" width="80%" />
-</div>
-
 
 Engineer an autonomous planetary exploration rover built to navigate hostile simulated terrain.
 
@@ -28,10 +24,3 @@ Scientific Payloads: Prototype onboard soil-sampling mechanisms, environmental s
 
 
 **Experience Level:** Advanced. Ideal for students interested in aerospace engineering, robotics mobility systems, computer vision, and autonomous vehicle design.
-
-<div align="center">
-  <img src="../../../assets/img/committee/Kevin.jpg" alt="Kevin - Artemis Project Lead" width="200" style="border-radius: 50%;" />
-  <br />
-  <strong>Kevin</strong>
-  <p>Artemis Project Lead</p>
-</div>
