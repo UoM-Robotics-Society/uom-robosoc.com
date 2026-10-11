@@ -25,4 +25,8 @@ The Live Tournament: Pilot your robot inside the combat arena and repair battle 
 
 **Experience Level:** Open to all skill levels. Great for both beginners looking to get into rapid prototyping and experienced makers eager to build competitive combat machines.
 
-[Fill in this form to sign up for our RFL Beginner Project this year.](https://docs.google.com/forms/d/e/1FAIpQLSfkJej8RlVrFS85Zw_yJ8THpqemkA0ei1h8fY9-8PDQEOEY-w/viewform)
+Fill in one of the following forms to sign up for RFL this year:
+
+[RFL Beginner - Antweight](https://docs.google.com/forms/d/e/1FAIpQLSfkJej8RlVrFS85Zw_yJ8THpqemkA0ei1h8fY9-8PDQEOEY-w/viewform)
+
+[RFL Advanced - Beetleweight](https://forms.gle/XgEDjZFyY1mm2kQD6)
