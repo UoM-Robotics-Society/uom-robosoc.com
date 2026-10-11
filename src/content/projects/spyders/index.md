@@ -23,3 +23,5 @@ Multi-Channel Servo Control: Wire dedicated power distribution boards, multi-cha
 Terrain Adaptation & Sensing: Integrate IMUs and distance sensors to detect tilt, maintain balance, and adapt foot placement over uneven surfaces.
 
 **Experience Level:** Intermediate. Perfect for members eager to dive into dynamic stability, legged kinematics, and advanced multi-actuator coordination.
+
+[Fill in this form to sign up for our Spyder Project this year.](https://docs.google.com/forms/d/e/1FAIpQLSfkJej8RlVrFS85Zw_yJ8THpqemkA0ei1h8fY9-8PDQEOEY-w/viewform)
