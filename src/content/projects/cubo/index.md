@@ -23,3 +23,5 @@ Circuit Design: Wire custom drivers and controllers to power and coordinate all 
 
 
 **Experience Level:** Intermediate. Ideal for members with some prior background in electronics, CAD, or programming who want to step up from beginner projects.
+
+[Fill in this form to sign up for our CUBO Project this year.](https://docs.google.com/forms/d/e/1FAIpQLSfkJej8RlVrFS85Zw_yJ8THpqemkA0ei1h8fY9-8PDQEOEY-w/viewform)
