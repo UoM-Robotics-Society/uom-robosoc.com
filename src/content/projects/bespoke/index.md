@@ -26,4 +26,4 @@ Showcase Presentation: Demonstrate your working prototype at society events, hac
 
 **Experience Level:** All levels welcome. Whether you are building an ambitious final year passion project or testing an experimental prototype for fun, Bespoke gives you the platform to make it happen.
 
-**[Complete This Form To Apply](https://forms.gle/CX4Fp1pZyMFH6Q9F9)**
+**[Fill in this form to sign up for a Bespoke Project this year.](https://forms.gle/CX4Fp1pZyMFH6Q9F9)**
