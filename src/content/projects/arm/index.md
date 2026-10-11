@@ -24,3 +24,5 @@ Control Systems & Automation: Program inverse kinematic solvers, motion profiles
 
 
 **Experience Level:** Intermediate to Advanced. Best suited for students interested in mechanical kinematics, motor control algorithms, and industrial automation.
+
+[Fill in this form to sign up for our ARM Project this year.](https://forms.gle/MPYsEZrNntjuLWz78)
