@@ -1,6 +1,6 @@
 ---
 title: "The Arm Project"
-summary: "Making a robotic arm play chess."
+summary: "Making a robotic arm play poker."
 date: "Jan 01 2026"
 draft: false
 featured: true
