@@ -1,6 +1,6 @@
 ---
 title: "RoboDog"
-summary: "Building a budget four-legged walking robot from scratch."
+summary: "Building a four-legged walking robot from scratch."
 date: "Jan 01 2026"
 draft: false
 featured: true
@@ -10,7 +10,7 @@ tags:
 ---
 Design, build, and test a low-cost, four-legged walking robot.
 
-The RoboDog project focuses on building an agile 4 legged robot that weighs under 10kg on a budget. Working together, team members will design lightweight custom joints, rewire brushless motors for extra torque, and write code to get the robot standing, balancing, and trotting.
+The RoboDog project focuses on building an agile 4 legged robot that weighs under 10kg. Working together, team members will design lightweight custom joints, rewire brushless motors for extra torque, and write code to get the robot standing, balancing, and trotting.
 
 Check out the following video to get a better idea of what we plan on doing: [RoboDog by Aaed Musa](https://www.youtube.com/watch?v=GFLa1b1juUo)
 
