@@ -58,6 +58,10 @@ export const LINKS: Links = [
   {
     TEXT: "Join",
     HREF: "/join",
+  },
+  {
+    TEXT: "Events",
+    HREF: "/events",
   }
 ]
 
