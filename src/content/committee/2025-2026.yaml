@@ -4,7 +4,7 @@ img: ../../assets/img/committee/comm2627.jpg
 members:
    -
     name: Nadeem
-    role: Chair
+    role: President
     img: ../../assets/img/committee/nadeem.jpg
    -
     name: David
@@ -29,52 +29,52 @@ members:
    -
     name: Arailym
     fullName: Jongjun Justin Lee
-    role: Project Lead
+    role: RFL Project Lead
     img: ../../assets/img/committee/Arailym.jpg
    -
     name: Sean
     fullName: Arjan Khele
-    role: Project Lead
+    role: Buggy Project Lead
     img: ../../assets/img/committee/Sean.jpg
    -
     name: Taglub
     fullName: Joshua Alliet
-    role: Project Lead
+    role: Spyder Project Lead
     img: ../../assets/img/committee/Taglub.jpg
    -
     name: Kshitij
     fullName: Levon Yavrumyan
-    role: Project Lead
+    role: ARM Project Lead
     img: ../../assets/img/committee/Kshitij.jpg
    -
     name: Kevin
     fullName: Dinakar Iyer
-    role: Project Lead
+    role: Artemis Project Lead
     img: ../../assets/img/committee/Kevin.jpg
    -
     name: Seun
     fullName: Tara Mulhall
-    role: Project Lead
+    role: CUBO Project Lead
     img: ../../assets/img/committee/seun.jpg
    -
     name: Archie
     fullName: Tara Mulhall
-    role: Project Lead
+    role: RoboDog Project Lead
     img: ../../assets/img/committee/Archie.jpg
    -
     name: Leon
     fullName: Xandra Wong
-    role: Project Support
+    role: RFL Project Support
     img: ../../assets/img/committee/Leon.jpg
    -
     name: Juza
     fullName: Camila Salazar
-    role: Project Support
+    role: Buggy Project Support
     img: ../../assets/img/committee/Juza.jpg
    -
     name: Angie
     fullName: Josh Fleet
-    role: Project Support
+    role: Buggy Project Support
     img: ../../assets/img/committee/Angie.jpg
    -
     name: Adela
