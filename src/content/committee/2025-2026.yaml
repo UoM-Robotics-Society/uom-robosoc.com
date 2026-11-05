@@ -17,25 +17,60 @@ members:
     role: Treasurer
     img: ../../assets/img/committee/Fatima.jpg
    -
+    name: Xuan
+    fullName: Thierry Popat
+    role: Sponsorship Director
+    img: ../../assets/img/committee/Xuan.jpg
+   -
     name: Junior
     fullName: Seun Fashesin Souza
     role: Inclusions/Events
     img: ../../assets/img/committee/Junior.jpg
+   -
+    name: Yassin
+    fullName: Billy Caulfield
+    role: Events Team
+    img: ../../assets/img/committee/Yassin.jpg
+   -
+    name: Adela
+    fullName: Rabia Chowdhury
+    role: Media Manager
+    img: ../../assets/img/committee/Adela.jpg
+   -
+    name: Zain
+    fullName: Zoe Tang
+    role: Media Manager
+    img: ../../assets/img/committee/Zain.jpg
    -
     name: Ahmed Yasser
     fullName: Sara Alaloul
     role: Technician
     img: ../../assets/img/committee/AhmedY.jpg
    -
+    name: Sean
+    fullName: Arjan Khele
+    role: Buggy Project Lead
+    img: ../../assets/img/committee/Sean.jpg
+   -
+    name: Juza
+    fullName: Camila Salazar
+    role: Buggy Project Support
+    img: ../../assets/img/committee/Juza.jpg
+   -
+    name: Angie
+    fullName: Josh Fleet
+    role: Buggy Project Support
+    img: ../../assets/img/committee/Angie.jpg
+   -
     name: Arailym
     fullName: Jongjun Justin Lee
     role: RFL Project Lead
     img: ../../assets/img/committee/Arailym.jpg
    -
-    name: Sean
-    fullName: Arjan Khele
-    role: Buggy Project Lead
-    img: ../../assets/img/committee/Sean.jpg
+    name: Taimur
+    fullName: Xandra Wong
+    role: RFL Project Support
+    img: ../../assets/img/committee/Taimur.jpg
    -
     name: Taglub
     fullName: Joshua Alliet
@@ -62,36 +97,6 @@ members:
     role: RoboDog Project Lead
     img: ../../assets/img/committee/Archie.jpg
    -
-    name: Taimur
-    fullName: Xandra Wong
-    role: RFL Project Support
-    img: ../../assets/img/committee/Taimur.jpg
-   -
-    name: Juza
-    fullName: Camila Salazar
-    role: Buggy Project Support
-    img: ../../assets/img/committee/Juza.jpg
-   -
-    name: Angie
-    fullName: Josh Fleet
-    role: Buggy Project Support
-    img: ../../assets/img/committee/Angie.jpg
-   -
-    name: Adela
-    fullName: Rabia Chowdhury
-    role: Media Manager
-    img: ../../assets/img/committee/Adela.jpg
-   -
-    name: Zain
-    fullName: Zoe Tang
-    role: Media Manager
-    img: ../../assets/img/committee/Zain.jpg
-   -
-    name: Yassin
-    fullName: Billy Caulfield
-    role: Events Team
-    img: ../../assets/img/committee/Yassin.jpg
-   -
     name: Zoe
     fullName: Archie James
     role: Hackathon Team
@@ -116,8 +121,3 @@ members:
     fullName: Thierry Popat
     role: Hackathon Team
     img: ../../assets/img/committee/sara.jpg
-   -
-    name: Xuan
-    fullName: Thierry Popat
-    role: Sponsorship Director
-    img: ../../assets/img/committee/Xuan.jpg
