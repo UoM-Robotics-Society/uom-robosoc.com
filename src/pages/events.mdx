@@ -3,6 +3,37 @@ layout: ../layouts/MDXPage.astro
 title: "Events"
 ---
 
+import { Image } from "astro:assets";
+import arm from "../assets/img/sponsors/arm.png";
+import quanser from "../assets/img/sponsors/quanser.png";
+import cradle from "../assets/img/sponsors/cradle.png";
+import amentum from "../assets/img/sponsors/amentum.png";
+import icenine from "../assets/img/sponsors/icenine.png";
+import ukri from "../assets/img/sponsors/ukri.png";
+import raico from "../assets/img/sponsors/raico.svg";
+import gdg from "../assets/img/sponsors/gdg.png";
+import manchester from "../assets/img/sponsors/manchester.png";
+import eeesoc from "../assets/img/sponsors/eeesoc.png";
+import makerspace from "../assets/img/sponsors/makerspace.png";
+import dominos from "../assets/img/sponsors/dominos.png";
+import redbull from "../assets/img/sponsors/redbull.png";
+
+export const sponsors = [
+  { name: "Arm", logo: arm, url: "https://www.arm.com" },
+  { name: "Quanser", logo: quanser, url: "https://www.quanser.com" },
+  { name: "Cradle Robotics", logo: cradle, url: "https://cradlerobotics.co.uk/" },
+  { name: "Amentum", logo: amentum, url: "https://www.amentum.com" },
+  { name: "Ice Nine Robotics", logo: icenine, url: "https://ice9robotics.co.uk/" },
+  { name: "UKRI", logo: ukri, url: "https://www.ukri.org" },
+  { name: "RAICo", logo: raico, url: "https://race.ukaea.uk/programmes/raico" },
+  { name: "GDG", logo: gdg, url: null },
+  { name: "University of Manchester", logo: manchester, url: "https://www.manchester.ac.uk/" },
+  { name: "EEESoc", logo: eeesoc, url: "https://manchesterstudentsunion.com/activities/view/eeesoc" },
+  { name: "Makerspace Manchester", logo: makerspace, url: "https://www.makerspacemanchester.org/" },
+  { name: "Domino's", logo: dominos, url: "https://www.dominos.co.uk" },
+  { name: "Red Bull", logo: redbull, url: "https://www.redbull.com/gb-en" },
+];
+
 We will be running many events this year, including multiple hackathon events, culminating to a main Hack-A-Bot scheduled for March 2027 (more details to follow). We also host weekly sessions every Wednesday for different Projects, which you can find on the Projects Tab above. We also host social events every week, like Pub Crawls, Pumpkin Carving, Games Nights and many more! Make sure to get involved!
 
 ### Women In Robotics
@@ -36,3 +67,11 @@ Robotics isn't all soldering irons and debugging. We run socials every week so y
 ### Sponsorships
 
 None of our events would be possible without the support of our sponsors, who fund our components, competitions and hackathons, and help connect our members with industry. Thank you to everyone who supports us this year! If your company would like to work with us, please get in touch with our Sponsorship Director.
+
+<div class="not-prose grid grid-cols-2 sm:grid-cols-3 gap-4 my-6">
+  {sponsors.map((s) => (
+    <a href={s.url} target="_blank" class="flex items-center justify-center rounded-lg bg-white p-4 h-28 border border-black/10 dark:border-white/10 hover:scale-105 transition">
+      <Image src={s.logo} alt={s.name} class="max-h-full w-auto object-contain" />
+    </a>
+  ))}
+</div>
