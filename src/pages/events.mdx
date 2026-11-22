@@ -10,7 +10,7 @@ import cradle from "../assets/img/sponsors/cradle.png";
 import amentum from "../assets/img/sponsors/amentum.png";
 import icenine from "../assets/img/sponsors/icenine.png";
 import ukri from "../assets/img/sponsors/ukri.png";
-import raico from "../assets/img/sponsors/raico.svg";
+import raico from "../assets/img/sponsors/raico.png";
 import gdg from "../assets/img/sponsors/gdg.png";
 import manchester from "../assets/img/sponsors/manchester.png";
 import eeesoc from "../assets/img/sponsors/eeesoc.png";
@@ -26,7 +26,7 @@ export const sponsors = [
   { name: "Ice Nine Robotics", logo: icenine, url: "https://ice9robotics.co.uk/" },
   { name: "UKRI", logo: ukri, url: "https://www.ukri.org" },
   { name: "RAICo", logo: raico, url: "https://race.ukaea.uk/programmes/raico" },
-  { name: "GDG", logo: gdg, url: null },
+  { name: "Google Developer Groups", logo: gdg, url: null },
   { name: "University of Manchester", logo: manchester, url: "https://www.manchester.ac.uk/" },
   { name: "EEESoc", logo: eeesoc, url: "https://manchesterstudentsunion.com/activities/view/eeesoc" },
   { name: "Makerspace Manchester", logo: makerspace, url: "https://www.makerspacemanchester.org/" },
@@ -70,7 +70,7 @@ None of our events would be possible without the support of our sponsors, who fu
 
 <div class="not-prose grid grid-cols-2 sm:grid-cols-3 gap-4 my-6">
   {sponsors.map((s) => (
-    <a href={s.url} target="_blank" class="flex items-center justify-center rounded-lg bg-white p-4 h-28 border border-black/10 dark:border-white/10 hover:scale-105 transition">
+    <a href={s.url} target="_blank" class="flex items-center justify-center rounded-lg bg-neutral-900 p-4 h-28 border border-white/10 hover:scale-105 transition">
       <Image src={s.logo} alt={s.name} class="max-h-full w-auto object-contain" />
     </a>
   ))}
